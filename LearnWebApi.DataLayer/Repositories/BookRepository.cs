@@ -70,7 +70,8 @@ namespace LearnWebApi.DataLayer.Repositories
                 {
                     book.Author = author;
                     return book;
-                }, splitOn: "Name", commandType: CommandType.StoredProcedure);
+                }, splitOn: "Name",
+                    commandType: CommandType.StoredProcedure);
             }
             catch (Exception ex)
             {
